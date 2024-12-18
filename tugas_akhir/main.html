@@ -1,0 +1,1876 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Import Library &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_akhir/main';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tugas-1/main.html"><strong>Tugas 1</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-2/main.html"><strong>Tugas 2</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-3/main.html"><strong>Tugas 3</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-4/main.html"><strong>Tugas 4</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-5/main.html"><strong>Tugas 5</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-6/main.html"><strong>Tugas 6</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-7/main.html"><strong>Tugas 7</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas-8/main.html"><strong>Tugas 8</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tugas_akhir/main.html"><strong>Tugas Akhir</strong></a></li>
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftugas_akhir/main.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/tugas_akhir/main.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Import Library</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Import Library</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#read-csv-data-tfidf"><strong>Read CSV data tfidf</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-c-means-clustering-dan-pca"><strong>Fuzzy C-Means Clustering dan PCA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-dimensi-dengan-akurasi-terbaik"><strong>Mencari Dimensi dengan Akurasi Terbaik</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-untuk-dimensi-terbaik"><strong>Scatter Plot untuk Dimensi Terbaik</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-untuk-komponen-2"><strong>Scatter Plot untuk Komponen 2</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-akurasi-per-dimensi"><strong>Grafik Akurasi per Dimensi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#akurasi-untuk-setiap-komponen"><strong>Akurasi untuk Setiap Komponen</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pake-svd"><strong>Pake SVD</strong></a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>scikit-fuzzy
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: scikit-fuzzy in /usr/local/lib/python3.10/dist-packages (0.5.0)
+</pre></div>
+</div>
+</div>
+</div>
+<section id="import-library">
+<h1><strong>Import Library</strong><a class="headerlink" href="#import-library" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bagian 1: Import Libraries yang Dibutuhkan</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="read-csv-data-tfidf">
+<h1><strong>Read CSV data tfidf</strong><a class="headerlink" href="#read-csv-data-tfidf" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bagian 2: Membaca Dataset dan Menyiapkan Data</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>  <span class="c1"># Ganti dengan path file Anda</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># Pisahkan label dan fitur</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;kategori&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode label menjadi numerik untuk evaluasi akurasi</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-1bc7820f5f89&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Bagian 2: Membaca Dataset dan Menyiapkan Data</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>  <span class="c1"># Ganti dengan path file Anda</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Pisahkan label dan fitur</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1025</span> 
+<span class="ne">-&gt; </span><span class="mi">1026</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1027</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1028</span> 
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">618</span> 
+<span class="g g-Whitespace">    </span><span class="mi">619</span>     <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">621</span> 
+<span class="g g-Whitespace">    </span><span class="mi">622</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1618</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1619</span>         <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1621</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1622</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>                 <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>                     <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span>             <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>                 <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>                 <span class="n">mode</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>         <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>             <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>             <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>                 <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>                 <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;data_100.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fuzzy-c-means-clustering-dan-pca">
+<h1><strong>Fuzzy C-Means Clustering dan PCA</strong><a class="headerlink" href="#fuzzy-c-means-clustering-dan-pca" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+
+<span class="c1"># Contoh dummy data (ganti ini dengan dataset Anda)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;feature1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">],</span>
+    <span class="s1">&#39;feature2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">],</span>  <span class="c1"># Kolom non-numerik</span>
+    <span class="s1">&#39;feature3&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;FOTO: Melihat Kehancuran Gaza usai Satu Tahun Agresi Brutal Israel&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Text 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Text 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Text 4&#39;</span><span class="p">],</span>  <span class="c1"># String teks</span>
+    <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Label target</span>
+<span class="p">})</span>
+
+<span class="c1"># Pisahkan fitur dan label</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">])</span>  <span class="c1"># Semua kecuali label</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span>  <span class="c1"># Kolom label</span>
+
+<span class="c1"># Identifikasi kolom non-numerik</span>
+<span class="n">non_numeric_columns</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kolom non-numerik:&quot;</span><span class="p">,</span> <span class="n">non_numeric_columns</span><span class="p">)</span>
+
+<span class="c1"># Ubah kolom non-numerik menjadi numerik menggunakan LabelEncoder</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">non_numeric_columns</span><span class="p">:</span>
+    <span class="n">features</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">col</span><span class="p">])</span>
+
+<span class="c1"># Konversi DataFrame ke numpy array untuk kompatibilitas</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">labels</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Fuzzy C-Means Clustering dan PCA</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># Tentukan dimensi maksimal (100 atau lebih kecil dari jumlah fitur)</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Dari dimensi maksimal hingga 2</span>
+    <span class="c1"># Kurangi dimensi data menggunakan PCA</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+    <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+    <span class="c1"># Fuzzy C-Means Clustering</span>
+    <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+        <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+        <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+        <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+        <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Keanggotaan cluster</span>
+    <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+        <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+        <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Simpan hasil</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+        <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+        <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+        <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+    <span class="p">}</span>
+
+<span class="c1"># Cetak hasil terbaik</span>
+<span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi terbaik: </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kolom non-numerik: Index([&#39;feature2&#39;, &#39;feature3&#39;], dtype=&#39;object&#39;)
+Dimensi terbaik: 3, Akurasi: 0.5
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="mencari-dimensi-dengan-akurasi-terbaik">
+<h1><strong>Mencari Dimensi dengan Akurasi Terbaik</strong><a class="headerlink" href="#mencari-dimensi-dengan-akurasi-terbaik" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4. Mencari akurasi terbaik dan tampilkan hasil</span>
+<span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">dim</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+<span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Cetak akurasi terbaik</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi terbaik: 0.50 pada dimensi 3.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="scatter-plot-untuk-dimensi-terbaik">
+<h1><strong>Scatter Plot untuk Dimensi Terbaik</strong><a class="headerlink" href="#scatter-plot-untuk-dimensi-terbaik" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5. Scatter plot untuk dimensi terbaik (2 dimensi)</span>
+<span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">]</span>
+<span class="n">pca_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+<span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+<span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Scatter Plot untuk dimensi terbaik</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+    <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan centroid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2bedf1736bcaf4a62d21573b9fe475d57a1b354116fdfb16181178c476b84131.png" src="../_images/2bedf1736bcaf4a62d21573b9fe475d57a1b354116fdfb16181178c476b84131.png" />
+</div>
+</div>
+</section>
+<section id="scatter-plot-untuk-komponen-2">
+<h1><strong>Scatter Plot untuk Komponen 2</strong><a class="headerlink" href="#scatter-plot-untuk-komponen-2" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 6. Scatter plot untuk dimensi 2</span>
+<span class="n">final_result_2d</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">pca_features_2d</span> <span class="o">=</span> <span class="n">final_result_2d</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+<span class="n">centroids_2d</span> <span class="o">=</span> <span class="n">final_result_2d</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+<span class="n">membership_2d</span> <span class="o">=</span> <span class="n">final_result_2d</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+<span class="n">accuracy_2d</span> <span class="o">=</span> <span class="n">final_result_2d</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Scatter Plot untuk Dimensi 2</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+    <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features_2d</span><span class="p">[</span><span class="n">membership_2d</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan centroid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids_2d</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids_2d</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA 2) - Akurasi: </span><span class="si">{</span><span class="n">accuracy_2d</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/1ff77c6e6e5f9a24f17c744b2056ebd5f072538e8ff178dbc50b5769dd1126e4.png" src="../_images/1ff77c6e6e5f9a24f17c744b2056ebd5f072538e8ff178dbc50b5769dd1126e4.png" />
+</div>
+</div>
+</section>
+<section id="grafik-akurasi-per-dimensi">
+<h1><strong>Grafik Akurasi per Dimensi</strong><a class="headerlink" href="#grafik-akurasi-per-dimensi" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 7. Tampilkan grafik akurasi per dimensi</span>
+<span class="n">dim_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">accuracy_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dim_list</span><span class="p">,</span> <span class="n">accuracy_list</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Akurasi per Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Jumlah Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Akurasi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Perbandingan Akurasi Fuzzy C-Means Clustering dengan PCA&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">best_dim</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Akurasi Terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b094725dd8636a75966ab4d048aa83229e2ce8b9575a6727ae60be805b4e67cf.png" src="../_images/b094725dd8636a75966ab4d048aa83229e2ce8b9575a6727ae60be805b4e67cf.png" />
+</div>
+</div>
+</section>
+<section id="akurasi-untuk-setiap-komponen">
+<h1><strong>Akurasi untuk Setiap Komponen</strong><a class="headerlink" href="#akurasi-untuk-setiap-komponen" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 8. Cetak akurasi untuk setiap dimensi</span>
+<span class="k">for</span> <span class="n">dim</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi: </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensi: 3, Akurasi: 0.50
+Dimensi: 2, Akurasi: 0.50
+</pre></div>
+</div>
+</div>
+</div>
+<p>yang ini ga nampilin grafik akurasi</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Pisahkan label dan data fitur</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;kategori&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Periksa kolom non-numerik</span>
+<span class="n">non_numeric_columns</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">non_numeric_columns</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kolom non-numerik terdeteksi: </span><span class="si">{</span><span class="n">non_numeric_columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">non_numeric_columns</span><span class="p">:</span>
+        <span class="c1"># Encode data non-numerik jika perlu</span>
+        <span class="n">features</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
+
+<span class="c1"># Konversi ke numpy array</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode label kategori menjadi numerik untuk evaluasi akurasi</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># 3. Fuzzy C-Means Clustering dan PCA untuk dimensi yang berbeda</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Membatasi dimensi maksimal dengan jumlah fitur (100)</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Kurangi dimensi data</span>
+        <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+        <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+        <span class="c1"># Fuzzy C-Means Clustering</span>
+        <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+            <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+            <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+            <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Keanggotaan cluster</span>
+        <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Simpan hasil</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+            <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+            <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+            <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+        <span class="p">}</span>
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error pada dimensi </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+<span class="c1"># 4. Scatter plot untuk dimensi terakhir (2 dimensi)</span>
+<span class="k">if</span> <span class="mi">2</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">pca_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+    <span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+    <span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Scatter Plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+        <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+    <span class="c1"># Tambahkan centroid</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA 2) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 5. Cetak akurasi untuk setiap dimensi</span>
+<span class="k">for</span> <span class="n">dim</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi: </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kolom non-numerik terdeteksi: Index([&#39;judul&#39;, &#39;tanggal&#39;, &#39;isi&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</div>
+<img alt="../_images/f9006b85fac94ec7353c199789e0b032340cc9ff67c6015d423acc7a57fdcea3.png" src="../_images/f9006b85fac94ec7353c199789e0b032340cc9ff67c6015d423acc7a57fdcea3.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensi: 3, Akurasi: 0.54
+Dimensi: 2, Akurasi: 0.52
+</pre></div>
+</div>
+</div>
+</div>
+<p>yang ini nampilin grafik akurasi cuma plot dimensi = 2</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Pisahkan label dan data fitur</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;kategori&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 3. Proses kolom non-numerik</span>
+<span class="n">non_numeric_columns</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">non_numeric_columns</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kolom non-numerik terdeteksi: </span><span class="si">{</span><span class="n">non_numeric_columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Opsional: Hapus kolom non-numerik yang tidak relevan</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">non_numeric_columns</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Menghapus kolom non-numerik: </span><span class="si">{</span><span class="n">non_numeric_columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada kolom non-numerik.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Konversi data ke tipe numerik</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+<span class="c1"># Hilangkan baris dengan nilai NaN akibat konversi</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Konversi ke array numpy</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode label kategori menjadi numerik untuk evaluasi akurasi</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># 4. Fuzzy C-Means Clustering dan PCA untuk dimensi yang berbeda</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Membatasi dimensi maksimal dengan jumlah fitur (100)</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Kurangi dimensi data</span>
+        <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+        <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+        <span class="c1"># Fuzzy C-Means Clustering</span>
+        <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+            <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+            <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+            <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Keanggotaan cluster</span>
+        <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Simpan hasil</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+            <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+            <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+            <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+        <span class="p">}</span>
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error pada dimensi </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+<span class="c1"># 5. Mencari akurasi terbaik dan tampilkan hasil</span>
+<span class="k">if</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">dim</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+    <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada hasil yang valid.&quot;</span><span class="p">)</span>
+
+<span class="c1"># 6. Scatter plot untuk dimensi terakhir (2 dimensi)</span>
+<span class="k">if</span> <span class="mi">2</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">pca_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+    <span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+    <span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Scatter Plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+        <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+    <span class="c1"># Tambahkan centroid</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA 2) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 7. Tampilkan grafik akurasi per dimensi</span>
+<span class="n">dim_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">accuracy_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dim_list</span><span class="p">,</span> <span class="n">accuracy_list</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Akurasi per Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Jumlah Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Akurasi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Perbandingan Akurasi Fuzzy C-Means Clustering dengan PCA&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">best_dim</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Akurasi Terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 8. Cetak akurasi untuk setiap dimensi</span>
+<span class="k">for</span> <span class="n">dim</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi: </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kolom non-numerik terdeteksi: Index([&#39;judul&#39;, &#39;tanggal&#39;, &#39;isi&#39;], dtype=&#39;object&#39;)
+Menghapus kolom non-numerik: Index([&#39;judul&#39;, &#39;tanggal&#39;, &#39;isi&#39;], dtype=&#39;object&#39;)
+Tidak ada hasil yang valid.
+</pre></div>
+</div>
+<img alt="../_images/0d304770d470038280568484d1a5f6c2378bab2bfdd7440d05065b58f5ecc1a7.png" src="../_images/0d304770d470038280568484d1a5f6c2378bab2bfdd7440d05065b58f5ecc1a7.png" />
+</div>
+</div>
+<p>yang ini nampilin plot akurasi terbaik</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Pisahkan label dan data fitur</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;kategori&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 3. Proses kolom non-numerik</span>
+<span class="n">non_numeric_columns</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">non_numeric_columns</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kolom non-numerik terdeteksi: </span><span class="si">{</span><span class="n">non_numeric_columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Opsional: Hapus kolom non-numerik yang tidak relevan</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">non_numeric_columns</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Menghapus kolom non-numerik: </span><span class="si">{</span><span class="n">non_numeric_columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada kolom non-numerik.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Konversi data ke tipe numerik</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+<span class="c1"># Hilangkan baris dengan nilai NaN akibat konversi</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="c1"># Konversi ke array numpy</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Encode label kategori menjadi numerik untuk evaluasi akurasi</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># 4. Fuzzy C-Means Clustering dan PCA untuk dimensi yang berbeda</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Membatasi dimensi maksimal dengan jumlah fitur (100)</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Kurangi dimensi data</span>
+        <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+        <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+        <span class="c1"># Fuzzy C-Means Clustering</span>
+        <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+            <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+            <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+            <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Keanggotaan cluster</span>
+        <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Simpan hasil</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+            <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+            <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+            <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+        <span class="p">}</span>
+    <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error pada dimensi </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+<span class="c1"># 5. Mencari akurasi terbaik dan tampilkan hasil</span>
+<span class="k">if</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">dim</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+    <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada hasil yang valid.&quot;</span><span class="p">)</span>
+
+<span class="c1"># 6. Scatter plot untuk dimensi terakhir (2 dimensi)</span>
+<span class="k">if</span> <span class="mi">2</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">pca_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+    <span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+    <span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Scatter Plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+        <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+    <span class="c1"># Tambahkan centroid</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA 2) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 7. Tampilkan grafik akurasi per dimensi</span>
+<span class="n">dim_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="n">accuracy_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dim_list</span><span class="p">,</span> <span class="n">accuracy_list</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Akurasi per Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Jumlah Dimensi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Akurasi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Perbandingan Akurasi Fuzzy C-Means Clustering dengan PCA&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">best_dim</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Akurasi Terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 8. Cetak akurasi untuk setiap dimensi</span>
+<span class="k">for</span> <span class="n">dim</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi: </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kolom non-numerik terdeteksi: Index([&#39;judul&#39;, &#39;tanggal&#39;, &#39;isi&#39;], dtype=&#39;object&#39;)
+Menghapus kolom non-numerik: Index([&#39;judul&#39;, &#39;tanggal&#39;, &#39;isi&#39;], dtype=&#39;object&#39;)
+Tidak ada hasil yang valid.
+</pre></div>
+</div>
+<img alt="../_images/0d304770d470038280568484d1a5f6c2378bab2bfdd7440d05065b58f5ecc1a7.png" src="../_images/0d304770d470038280568484d1a5f6c2378bab2bfdd7440d05065b58f5ecc1a7.png" />
+</div>
+</div>
+<p>yang ini nampilin plot akurasi terbaik dan plot dimensi = 2</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Tangani data non-numerik</span>
+<span class="c1"># Konversi teks (judul, isi) menjadi fitur numerik menggunakan TF-IDF</span>
+<span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># Maksimal 100 fitur</span>
+<span class="n">tfidf_features</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;isi&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+
+<span class="c1"># Gabungkan fitur TF-IDF dengan data numerik lainnya</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>  <span class="c1"># Ubah tanggal menjadi numerik (timestamp)</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Isi NaT dengan 0</span>
+
+<span class="c1"># Gabungkan semua fitur</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">([</span>
+    <span class="n">tfidf_features</span><span class="p">,</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;judul&#39;</span><span class="p">,</span> <span class="s1">&#39;isi&#39;</span><span class="p">,</span> <span class="s1">&#39;kategori&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
+<span class="p">])</span>
+
+<span class="c1"># Pisahkan label</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># 3. Fuzzy C-Means Clustering dan PCA untuk dimensi yang berbeda</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Maksimal dimensi</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="c1"># Kurangi dimensi data</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+    <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+    <span class="c1"># Fuzzy C-Means Clustering</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+            <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+            <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+            <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+            <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Keanggotaan cluster</span>
+        <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Simpan hasil</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+            <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+            <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+            <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+        <span class="p">}</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Clustering gagal untuk dimensi </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+<span class="c1"># 4. Validasi hasil</span>
+<span class="k">if</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">dim</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+    <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Scatter Plot untuk dimensi terbaik</span>
+    <span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">]</span>
+    <span class="n">pca_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+    <span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+    <span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+        <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada hasil clustering yang valid.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-18-57bac99861a0&gt;:21: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  data[&#39;tanggal&#39;] = pd.to_datetime(data[&#39;tanggal&#39;], errors=&#39;coerce&#39;)  # Ubah tanggal menjadi numerik (timestamp)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi terbaik: 0.97 pada dimensi 23.
+</pre></div>
+</div>
+<img alt="../_images/b3161787c74ce117ed04ba73dc251607ef8af5c4e7c2dbdced47edb1ac3c02b7.png" src="../_images/b3161787c74ce117ed04ba73dc251607ef8af5c4e7c2dbdced47edb1ac3c02b7.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Tangani data non-numerik</span>
+<span class="c1"># Konversi teks (contoh: kolom &#39;judul&#39; dan &#39;isi&#39;) menjadi fitur numerik menggunakan TF-IDF</span>
+<span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># Maksimum 100 fitur</span>
+<span class="n">tfidf_features</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;isi&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+
+<span class="c1"># Encode label kategori menjadi numerik</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Tangani kolom tanggal</span>
+<span class="k">if</span> <span class="s1">&#39;tanggal&#39;</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>  <span class="c1"># Ubah tanggal ke timestamp</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Isi NaT dengan 0</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kolom &#39;tanggal&#39; tidak ditemukan. Mengisi nilai default 0.&quot;</span><span class="p">)</span>
+    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tanggal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Pilih semua kolom numerik</span>
+<span class="n">numerical_features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span>
+
+<span class="c1"># Gabungkan semua fitur menjadi matriks numerik</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">([</span><span class="n">tfidf_features</span><span class="p">,</span> <span class="n">numerical_features</span><span class="o">.</span><span class="n">values</span><span class="p">])</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># 3. Fuzzy C-Means Clustering dan PCA untuk dimensi yang berbeda</span>
+<span class="n">max_dim</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Membatasi dimensi maksimal dengan jumlah fitur (100)</span>
+
+<span class="c1"># Mencari jumlah cluster terbaik</span>
+<span class="n">best_fpc</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">best_cluster_count</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">best_accuracy</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">best_dim</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_dim</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="c1"># Kurangi dimensi data</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+    <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+    <span class="c1"># Coba berbagai jumlah cluster (misalnya dari 2 hingga 6)</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span>
+        <span class="c1"># Fuzzy C-Means Clustering</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+                <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+                <span class="n">c</span><span class="o">=</span><span class="n">c</span><span class="p">,</span>
+                <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+                <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>
+                <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Clustering gagal untuk dimensi </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2"> dengan </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2"> cluster: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="c1"># Keanggotaan cluster</span>
+        <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+        <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+            <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Simpan hasil untuk setiap percobaan</span>
+        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s1">&#39;dim&#39;</span><span class="p">:</span> <span class="n">dim</span><span class="p">,</span>
+            <span class="s1">&#39;clusters&#39;</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span>
+            <span class="s1">&#39;pca_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+            <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+            <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+            <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span><span class="p">,</span>
+            <span class="s1">&#39;fpc&#39;</span><span class="p">:</span> <span class="n">fpc</span>
+        <span class="p">})</span>
+
+        <span class="c1"># Simpan hasil jika FPC lebih baik</span>
+        <span class="k">if</span> <span class="n">fpc</span> <span class="o">&gt;</span> <span class="n">best_fpc</span><span class="p">:</span>
+            <span class="n">best_fpc</span> <span class="o">=</span> <span class="n">fpc</span>
+            <span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">accuracy</span>
+            <span class="n">best_cluster_count</span> <span class="o">=</span> <span class="n">c</span>
+            <span class="n">best_dim</span> <span class="o">=</span> <span class="n">dim</span>
+
+<span class="c1"># 4. Mencari akurasi terbaik dan tampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2"> dengan </span><span class="si">{</span><span class="n">best_cluster_count</span><span class="si">}</span><span class="s2"> cluster.&quot;</span><span class="p">)</span>
+
+<span class="c1"># 5. Scatter plot untuk dimensi terbaik</span>
+<span class="n">best_result</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">result</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span> <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;dim&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">best_dim</span> <span class="ow">and</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;clusters&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">best_cluster_count</span><span class="p">)</span>
+<span class="n">pca_features</span> <span class="o">=</span> <span class="n">best_result</span><span class="p">[</span><span class="s1">&#39;pca_features&#39;</span><span class="p">]</span>
+<span class="n">centroids</span> <span class="o">=</span> <span class="n">best_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+<span class="n">membership</span> <span class="o">=</span> <span class="n">best_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">best_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Scatter Plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;tab10&#39;</span><span class="p">,</span> <span class="n">best_cluster_count</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">best_cluster_count</span><span class="p">):</span>
+    <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">pca_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="p">[</span><span class="n">colors</span><span class="p">(</span><span class="n">i</span><span class="p">)],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi PCA </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> - FPC: </span><span class="si">{</span><span class="n">best_fpc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen PCA 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-24-eee2cd0ffb12&gt;:26: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  data[&#39;tanggal&#39;] = pd.to_datetime(data[&#39;tanggal&#39;], errors=&#39;coerce&#39;)  # Ubah tanggal ke timestamp
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi terbaik: 0.51 pada dimensi 2 dengan 3 cluster.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-24-eee2cd0ffb12&gt;:109: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+  colors = plt.cm.get_cmap(&#39;tab10&#39;, best_cluster_count)
+</pre></div>
+</div>
+<img alt="../_images/dcccd70f6c8429379910c2a5c65f6add8f2ec0267b4b7be3cf5c09983a510171.png" src="../_images/dcccd70f6c8429379910c2a5c65f6add8f2ec0267b4b7be3cf5c09983a510171.png" />
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pake-svd">
+<h1><strong>Pake SVD</strong><a class="headerlink" href="#pake-svd" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+<span class="kn">from</span> <span class="nn">skfuzzy.cluster</span> <span class="kn">import</span> <span class="n">cmeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 1. Membaca dataset</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">&quot;data_100.csv&quot;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+
+<span class="c1"># 2. Pisahkan label dan tangani data non-numerik</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;kategori&#39;</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;kategori&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Konversi teks menjadi fitur numerik menggunakan TF-IDF (contoh: kolom teks seperti &#39;judul&#39; atau &#39;isi&#39;)</span>
+<span class="n">text_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;judul&#39;</span><span class="p">,</span> <span class="s1">&#39;isi&#39;</span><span class="p">]</span>  <span class="c1"># Kolom teks dalam dataset</span>
+<span class="n">tfidf_features_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">text_columns</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># Maksimum 100 fitur per kolom</span>
+        <span class="n">tfidf_features</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+        <span class="n">tfidf_features_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tfidf_features</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Hapus kolom setelah diproses</span>
+
+<span class="c1"># Gabungkan semua fitur TF-IDF</span>
+<span class="k">if</span> <span class="n">tfidf_features_list</span><span class="p">:</span>
+    <span class="n">tfidf_features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span><span class="n">tfidf_features_list</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">tfidf_features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># Jika tidak ada kolom teks, gunakan array kosong</span>
+
+<span class="c1"># Gabungkan semua data numerik dengan TF-IDF</span>
+<span class="n">numerical_features</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">([</span><span class="n">tfidf_features</span><span class="p">,</span> <span class="n">numerical_features</span><span class="p">])</span>
+
+<span class="c1"># Encode label kategori menjadi numerik untuk evaluasi akurasi</span>
+<span class="n">label_encoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">encoded_labels</span> <span class="o">=</span> <span class="n">label_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+
+<span class="c1"># Placeholder untuk hasil</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># 3. Fuzzy C-Means Clustering dan SVD untuk dimensi yang berbeda</span>
+<span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># Mulai dari jumlah fitur penuh hingga 2 dimensi</span>
+    <span class="c1"># Kurangi dimensi data</span>
+    <span class="n">svd</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">dim</span><span class="p">)</span>
+    <span class="n">reduced_features</span> <span class="o">=</span> <span class="n">svd</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+    <span class="c1"># Fuzzy C-Means Clustering</span>
+    <span class="n">cntr</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">u0</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">jm</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">fpc</span> <span class="o">=</span> <span class="n">cmeans</span><span class="p">(</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">reduced_features</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+        <span class="n">c</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>                  <span class="c1"># 2 clusters</span>
+        <span class="n">m</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>                <span class="c1"># Tingkat fuzziness</span>
+        <span class="n">error</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span>          <span class="c1"># Toleransi error</span>
+        <span class="n">maxiter</span><span class="o">=</span><span class="mi">1000</span>          <span class="c1"># Iterasi maksimum</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Keanggotaan cluster</span>
+    <span class="n">cluster_membership</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Hitung akurasi berdasarkan label asli</span>
+    <span class="n">accuracy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+        <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="n">cluster_membership</span><span class="p">),</span>
+        <span class="n">accuracy_score</span><span class="p">(</span><span class="n">encoded_labels</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">cluster_membership</span><span class="p">)</span>  <span class="c1"># Cek inversi cluster</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Simpan hasil</span>
+    <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;svd_features&#39;</span><span class="p">:</span> <span class="n">reduced_features</span><span class="p">,</span>
+        <span class="s1">&#39;centroids&#39;</span><span class="p">:</span> <span class="n">cntr</span><span class="p">,</span>
+        <span class="s1">&#39;membership&#39;</span><span class="p">:</span> <span class="n">cluster_membership</span><span class="p">,</span>
+        <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="n">accuracy</span>
+    <span class="p">}</span>
+
+<span class="c1"># 4. Scatter plot untuk dimensi terakhir (2 dimensi)</span>
+<span class="n">final_result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">svd_features</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;svd_features&#39;</span><span class="p">]</span>
+<span class="n">centroids</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;centroids&#39;</span><span class="p">]</span>
+<span class="n">membership</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;membership&#39;</span><span class="p">]</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">final_result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Scatter Plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+    <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">svd_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan centroid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi SVD 2) - Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen SVD 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen SVD 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 5. Cetak akurasi untuk setiap dimensi</span>
+<span class="k">for</span> <span class="n">dim</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi: </span><span class="si">{</span><span class="n">dim</span><span class="si">}</span><span class="s2">, Akurasi: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/9170110de38712941763d1e2be57265b2314b374af050ce26bcef0a70deb21d4.png" src="../_images/9170110de38712941763d1e2be57265b2314b374af050ce26bcef0a70deb21d4.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensi: 200, Akurasi: 0.93
+Dimensi: 199, Akurasi: 0.92
+Dimensi: 198, Akurasi: 0.94
+Dimensi: 197, Akurasi: 0.92
+Dimensi: 196, Akurasi: 0.93
+Dimensi: 195, Akurasi: 0.94
+Dimensi: 194, Akurasi: 0.93
+Dimensi: 193, Akurasi: 0.93
+Dimensi: 192, Akurasi: 0.89
+Dimensi: 191, Akurasi: 0.93
+Dimensi: 190, Akurasi: 0.94
+Dimensi: 189, Akurasi: 0.93
+Dimensi: 188, Akurasi: 0.91
+Dimensi: 187, Akurasi: 0.94
+Dimensi: 186, Akurasi: 0.95
+Dimensi: 185, Akurasi: 0.93
+Dimensi: 184, Akurasi: 0.92
+Dimensi: 183, Akurasi: 0.85
+Dimensi: 182, Akurasi: 0.94
+Dimensi: 181, Akurasi: 0.93
+Dimensi: 180, Akurasi: 0.95
+Dimensi: 179, Akurasi: 0.94
+Dimensi: 178, Akurasi: 0.93
+Dimensi: 177, Akurasi: 0.94
+Dimensi: 176, Akurasi: 0.93
+Dimensi: 175, Akurasi: 0.71
+Dimensi: 174, Akurasi: 0.92
+Dimensi: 173, Akurasi: 0.93
+Dimensi: 172, Akurasi: 0.93
+Dimensi: 171, Akurasi: 0.93
+Dimensi: 170, Akurasi: 0.64
+Dimensi: 169, Akurasi: 0.92
+Dimensi: 168, Akurasi: 0.93
+Dimensi: 167, Akurasi: 0.94
+Dimensi: 166, Akurasi: 0.85
+Dimensi: 165, Akurasi: 0.93
+Dimensi: 164, Akurasi: 0.94
+Dimensi: 163, Akurasi: 0.93
+Dimensi: 162, Akurasi: 0.94
+Dimensi: 161, Akurasi: 0.58
+Dimensi: 160, Akurasi: 0.92
+Dimensi: 159, Akurasi: 0.93
+Dimensi: 158, Akurasi: 0.94
+Dimensi: 157, Akurasi: 0.93
+Dimensi: 156, Akurasi: 0.93
+Dimensi: 155, Akurasi: 0.95
+Dimensi: 154, Akurasi: 0.93
+Dimensi: 153, Akurasi: 0.95
+Dimensi: 152, Akurasi: 0.56
+Dimensi: 151, Akurasi: 0.94
+Dimensi: 150, Akurasi: 0.93
+Dimensi: 149, Akurasi: 0.94
+Dimensi: 148, Akurasi: 0.92
+Dimensi: 147, Akurasi: 0.94
+Dimensi: 146, Akurasi: 0.93
+Dimensi: 145, Akurasi: 0.97
+Dimensi: 144, Akurasi: 0.91
+Dimensi: 143, Akurasi: 0.93
+Dimensi: 142, Akurasi: 0.94
+Dimensi: 141, Akurasi: 0.93
+Dimensi: 140, Akurasi: 0.92
+Dimensi: 139, Akurasi: 0.93
+Dimensi: 138, Akurasi: 0.94
+Dimensi: 137, Akurasi: 0.96
+Dimensi: 136, Akurasi: 0.93
+Dimensi: 135, Akurasi: 0.94
+Dimensi: 134, Akurasi: 0.93
+Dimensi: 133, Akurasi: 0.96
+Dimensi: 132, Akurasi: 0.92
+Dimensi: 131, Akurasi: 0.94
+Dimensi: 130, Akurasi: 0.95
+Dimensi: 129, Akurasi: 0.91
+Dimensi: 128, Akurasi: 0.94
+Dimensi: 127, Akurasi: 0.92
+Dimensi: 126, Akurasi: 0.93
+Dimensi: 125, Akurasi: 0.93
+Dimensi: 124, Akurasi: 0.93
+Dimensi: 123, Akurasi: 0.93
+Dimensi: 122, Akurasi: 0.94
+Dimensi: 121, Akurasi: 0.94
+Dimensi: 120, Akurasi: 0.93
+Dimensi: 119, Akurasi: 0.94
+Dimensi: 118, Akurasi: 0.91
+Dimensi: 117, Akurasi: 0.94
+Dimensi: 116, Akurasi: 0.93
+Dimensi: 115, Akurasi: 0.94
+Dimensi: 114, Akurasi: 0.96
+Dimensi: 113, Akurasi: 0.96
+Dimensi: 112, Akurasi: 0.93
+Dimensi: 111, Akurasi: 0.94
+Dimensi: 110, Akurasi: 0.87
+Dimensi: 109, Akurasi: 0.93
+Dimensi: 108, Akurasi: 0.93
+Dimensi: 107, Akurasi: 0.94
+Dimensi: 106, Akurasi: 0.95
+Dimensi: 105, Akurasi: 0.94
+Dimensi: 104, Akurasi: 0.94
+Dimensi: 103, Akurasi: 0.93
+Dimensi: 102, Akurasi: 0.93
+Dimensi: 101, Akurasi: 0.95
+Dimensi: 100, Akurasi: 0.93
+Dimensi: 99, Akurasi: 0.93
+Dimensi: 98, Akurasi: 0.96
+Dimensi: 97, Akurasi: 0.88
+Dimensi: 96, Akurasi: 0.94
+Dimensi: 95, Akurasi: 0.93
+Dimensi: 94, Akurasi: 0.94
+Dimensi: 93, Akurasi: 0.92
+Dimensi: 92, Akurasi: 0.92
+Dimensi: 91, Akurasi: 0.93
+Dimensi: 90, Akurasi: 0.76
+Dimensi: 89, Akurasi: 0.93
+Dimensi: 88, Akurasi: 0.93
+Dimensi: 87, Akurasi: 0.94
+Dimensi: 86, Akurasi: 0.96
+Dimensi: 85, Akurasi: 0.93
+Dimensi: 84, Akurasi: 0.93
+Dimensi: 83, Akurasi: 0.94
+Dimensi: 82, Akurasi: 0.93
+Dimensi: 81, Akurasi: 0.93
+Dimensi: 80, Akurasi: 0.93
+Dimensi: 79, Akurasi: 0.92
+Dimensi: 78, Akurasi: 0.94
+Dimensi: 77, Akurasi: 0.93
+Dimensi: 76, Akurasi: 0.93
+Dimensi: 75, Akurasi: 0.90
+Dimensi: 74, Akurasi: 0.93
+Dimensi: 73, Akurasi: 0.94
+Dimensi: 72, Akurasi: 0.93
+Dimensi: 71, Akurasi: 0.94
+Dimensi: 70, Akurasi: 0.94
+Dimensi: 69, Akurasi: 0.94
+Dimensi: 68, Akurasi: 0.93
+Dimensi: 67, Akurasi: 0.92
+Dimensi: 66, Akurasi: 0.63
+Dimensi: 65, Akurasi: 0.93
+Dimensi: 64, Akurasi: 0.94
+Dimensi: 63, Akurasi: 0.89
+Dimensi: 62, Akurasi: 0.93
+Dimensi: 61, Akurasi: 0.93
+Dimensi: 60, Akurasi: 0.93
+Dimensi: 59, Akurasi: 0.96
+Dimensi: 58, Akurasi: 0.90
+Dimensi: 57, Akurasi: 0.93
+Dimensi: 56, Akurasi: 0.93
+Dimensi: 55, Akurasi: 0.94
+Dimensi: 54, Akurasi: 0.92
+Dimensi: 53, Akurasi: 0.93
+Dimensi: 52, Akurasi: 0.93
+Dimensi: 51, Akurasi: 0.93
+Dimensi: 50, Akurasi: 0.94
+Dimensi: 49, Akurasi: 0.94
+Dimensi: 48, Akurasi: 0.95
+Dimensi: 47, Akurasi: 0.93
+Dimensi: 46, Akurasi: 0.94
+Dimensi: 45, Akurasi: 0.93
+Dimensi: 44, Akurasi: 0.94
+Dimensi: 43, Akurasi: 0.94
+Dimensi: 42, Akurasi: 0.93
+Dimensi: 41, Akurasi: 0.96
+Dimensi: 40, Akurasi: 0.92
+Dimensi: 39, Akurasi: 0.94
+Dimensi: 38, Akurasi: 0.94
+Dimensi: 37, Akurasi: 0.94
+Dimensi: 36, Akurasi: 0.94
+Dimensi: 35, Akurasi: 0.94
+Dimensi: 34, Akurasi: 0.93
+Dimensi: 33, Akurasi: 0.93
+Dimensi: 32, Akurasi: 0.93
+Dimensi: 31, Akurasi: 0.90
+Dimensi: 30, Akurasi: 0.93
+Dimensi: 29, Akurasi: 0.93
+Dimensi: 28, Akurasi: 0.93
+Dimensi: 27, Akurasi: 0.93
+Dimensi: 26, Akurasi: 0.93
+Dimensi: 25, Akurasi: 0.93
+Dimensi: 24, Akurasi: 0.93
+Dimensi: 23, Akurasi: 0.93
+Dimensi: 22, Akurasi: 0.93
+Dimensi: 21, Akurasi: 0.93
+Dimensi: 20, Akurasi: 0.93
+Dimensi: 19, Akurasi: 0.93
+Dimensi: 18, Akurasi: 0.95
+Dimensi: 17, Akurasi: 0.93
+Dimensi: 16, Akurasi: 0.93
+Dimensi: 15, Akurasi: 0.94
+Dimensi: 14, Akurasi: 0.96
+Dimensi: 13, Akurasi: 0.96
+Dimensi: 12, Akurasi: 0.96
+Dimensi: 11, Akurasi: 0.93
+Dimensi: 10, Akurasi: 0.93
+Dimensi: 9, Akurasi: 0.93
+Dimensi: 8, Akurasi: 0.93
+Dimensi: 7, Akurasi: 0.93
+Dimensi: 6, Akurasi: 0.93
+Dimensi: 5, Akurasi: 0.96
+Dimensi: 4, Akurasi: 0.94
+Dimensi: 3, Akurasi: 0.95
+Dimensi: 2, Akurasi: 0.93
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4. Mencari akurasi terbaik dan tampilkan hasil</span>
+<span class="n">best_dim</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">dim</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+<span class="n">best_accuracy</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">best_dim</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span>
+
+<span class="c1"># Cetak akurasi terbaik</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> pada dimensi </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi terbaik: 0.97 pada dimensi 145.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Scatter Plot untuk dimensi terbaik</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># Untuk 2 cluster</span>
+    <span class="n">cluster_points</span> <span class="o">=</span> <span class="n">svd_features</span><span class="p">[</span><span class="n">membership</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">cluster_points</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Cluster </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan centroid</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centroids</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centroids</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Centroid&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fuzzy C-Means Clustering (Dimensi SVD </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">) - Akurasi: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Komponen SVD 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Komponen SVD 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/672e72681aa00d257b70c28b1a7bda2206890f4f9fae4e631f635463231007cb.png" src="../_images/672e72681aa00d257b70c28b1a7bda2206890f4f9fae4e631f635463231007cb.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 5. Cetak akurasi untuk setiap dimensi</span>
+<span class="n">accuracies</span> <span class="o">=</span> <span class="p">[</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<span class="n">dimensions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+
+<span class="c1"># Plot akurasi terhadap dimensi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">dimensions</span><span class="p">,</span> <span class="n">accuracies</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Akurasi&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Dimensi&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Akurasi&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Akurasi terhadap Dimensi&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># 6. Menampilkan dimensi dan akurasi terbaik</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dimensi dengan akurasi terbaik: </span><span class="si">{</span><span class="n">best_dim</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Akurasi terbaik: </span><span class="si">{</span><span class="n">best_accuracy</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8368850c2cd949e44910d7534cfded8f87374085012f684f1f253fb339a6b629.png" src="../_images/8368850c2cd949e44910d7534cfded8f87374085012f684f1f253fb339a6b629.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dimensi dengan akurasi terbaik: 145
+Akurasi terbaik: 0.97
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./tugas_akhir"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Import Library</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#read-csv-data-tfidf"><strong>Read CSV data tfidf</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-c-means-clustering-dan-pca"><strong>Fuzzy C-Means Clustering dan PCA</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-dimensi-dengan-akurasi-terbaik"><strong>Mencari Dimensi dengan Akurasi Terbaik</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-untuk-dimensi-terbaik"><strong>Scatter Plot untuk Dimensi Terbaik</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-untuk-komponen-2"><strong>Scatter Plot untuk Komponen 2</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#grafik-akurasi-per-dimensi"><strong>Grafik Akurasi per Dimensi</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#akurasi-untuk-setiap-komponen"><strong>Akurasi untuk Setiap Komponen</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pake-svd"><strong>Pake SVD</strong></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
